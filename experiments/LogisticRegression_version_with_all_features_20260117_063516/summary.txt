@@ -1,0 +1,7 @@
+Experiment: LogisticRegression_version_with_all_features
+Timestamp: 20260117_063516
+brier: 0.07297438050086606
+log loss: 0.2575286664773782
+Num features: 45
+features: ['shot_distance', 'shot_angle', 'under_pressure', 'body_Head', 'body_Left Foot', 'body_Other', 'body_Right Foot', 'shoot_type_Corner', 'shoot_type_Free Kick', 'shoot_type_Open Play', 'pattern_From Corner', 'pattern_From Counter', 'pattern_From Free Kick', 'pattern_From Goal Kick', 'pattern_From Keeper', 'pattern_From Kick Off', 'pattern_From Throw In', 'pattern_Other', 'pattern_Regular Play', 'shoot_technic_Backheel', 'shoot_technic_Diving Header', 'shoot_technic_Half Volley', 'shoot_technic_Lob', 'shoot_technic_Normal', 'shoot_technic_Overhead Kick', 'shoot_technic_Volley', 'effective_goal_width', 'angle_from_center', 'in_penalty_area', 'in_six_yard_box', 'distance_angle_interaction', 'distance_squared', 'has_assist', 'pass_length', 'pass_progress_x', 'is_cross', 'is_cutback', 'is_through_ball', 'is_pass_ground', 'is_pass_high', 'is_pass_low', 'gk_distance_to_shooter', 'num_opponents_in_shot_cone', 'num_teammates_in_shot_cone', 'total_players_in_shot_cone']
+Num samples: 2946
