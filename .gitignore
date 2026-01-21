@@ -4,3 +4,8 @@
 __pycache__/
 .ipynb_checkpoints/
 .DS_Store
+
+# このファイルだけは特別にアップロードを許可する
+!wc_all_matches_scored_with_all_cols.csv
+
+
