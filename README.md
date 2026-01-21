@@ -236,6 +236,7 @@ football-xg-portfolio/
 │   └── EN_04_predict_wc_data.ipynb            # Inference on WC 2022 data
 │
 └── experiments/               # Experiment Logs & Artifacts
-    ├── LogisticRegression...
-    ├── XGBoost...
-    └── Ensemble...
+    ├── LogisticRegression_Tuned_version
+    ├── XGBoost_Tuned_version
+    └── Ensemble_version
+
