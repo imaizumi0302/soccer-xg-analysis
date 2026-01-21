@@ -9,7 +9,7 @@
 > Features include geometric feature engineering using Polygons and XAI (SHAP) for factor analysis.
 
 ## 🔗 Live Demo
-**👉 [Launch the Web App](ここにアプリのURLを貼る)**
+**👉 [Launch the Web App]https://soccer-xg-analysis-f6pgtnnzixwnbfbavbfrrk.streamlit.app/**
 *(Running on Streamlit Cloud / Data: FIFA World Cup 2022)*
 
 ---
@@ -260,4 +260,5 @@ football-xg-portfolio/
 
 This project is released under the **MIT License**.  
 See the `LICENSE` file for details.
+
 
