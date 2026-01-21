@@ -218,7 +218,7 @@ I built a Streamlit application to analyze the 2022 World Cup data using the cre
 
 ---
 
-## 📂 Repository Structure
+## 9. Repository Structure
 
 ```text
 football-xg-portfolio/
@@ -239,10 +239,12 @@ football-xg-portfolio/
     ├── LogisticRegression_Tuned_version
     ├── XGBoost_Tuned_version
     └── Ensemble_version
+```
 
 ---
 
-## 🛠 Tech Stack
+
+## 10. Tech Stack
 
 * **Language:** Python 3.12
 * **Data Analysis:** `pandas`, `numpy`
@@ -258,3 +260,4 @@ football-xg-portfolio/
 
 This project is released under the **MIT License**.  
 See the `LICENSE` file for details.
+
