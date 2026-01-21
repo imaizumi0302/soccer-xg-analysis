@@ -1,6 +1,6 @@
 # ⚽ FreezeFrame xG: Context-Aware Expected Goals Model
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.12-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg)
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-green.svg)
 ![StatsBomb](https://img.shields.io/badge/Data-StatsBomb_Open_Data-red.svg)
@@ -240,3 +240,21 @@ football-xg-portfolio/
     ├── XGBoost_Tuned_version
     └── Ensemble_version
 
+---
+
+## 🛠 Tech Stack
+
+* **Language:** Python 3.12
+* **Data Analysis:** `pandas`, `numpy`
+* **Machine Learning:** `xgboost`, `scikit-learn`
+* **Feature Engineering:** `shapely` (Geometric calculations)
+* **Visualization:** `matplotlib`, `seaborn`, `shap` (XAI)
+* **Web Application:** `streamlit`
+* **Data Source:** `statsbombpy` (StatsBomb Open Data)
+
+---
+
+## License
+
+This project is released under the **MIT License**.  
+See the `LICENSE` file for details.
