@@ -176,22 +176,43 @@ Since the Ensemble model showed the best performance in both Brier Score and Log
 
 ## 6. Modeling Strategy & Evaluation Metrics
 
+
 ### Models Used
-1.  **Logistic Regression:**
-    * Adopted as a baseline for its interpretability (easy to understand coefficient impact).
-2.  **XGBoost (Gradient Boosting):**
-    * Adopted to capture complex **non-linear interactions** between variables (e.g., "Distance is close, but there are many defenders").
+
+1. **Logistic Regression:**
+* Adopted as a baseline for its interpretability (easy to understand coefficient impact).
+
+
+2. **XGBoost (Gradient Boosting):**
+* Adopted to capture complex **non-linear interactions** between variables (e.g., "Distance is close, but there are many defenders").
+
+
+
+### Validation Strategy
+
+To ensure the model's generalizability to unseen games, strict validation protocols were implemented:
+
+* **GroupKFold Cross-Validation:**
+* Standard random splitting (KFold) causes **Data Leakage** in soccer analytics because events within the same match are highly correlated (e.g., defensive intensity, weather, scoreline effects).
+* This project adopted **GroupKFold** grouped by `match_id`. This ensures that the training and test sets contain completely distinct matches, simulating a real-world scenario where the model predicts outcomes for future games.
+
+
 
 ### Evaluation Metrics
+
 Soccer shot data is **Imbalanced Data** where "only about 1 in 10 shots results in a goal." Therefore, simple Accuracy is not an appropriate metric.
 This project prioritized the **"Reliability of Probability"** using the following metrics:
 
 * **Log Loss:**
-    * Evaluates the "uncertainty" of the model. It imposes a heavy penalty on "overconfident mistakes" (e.g., predicting 100% goal and missing), encouraging honest probability outputs.
+* Evaluates the "uncertainty" of the model. It imposes a heavy penalty on "overconfident mistakes" (e.g., predicting 100% goal and missing), encouraging honest probability outputs.
+
+
 * **Brier Score:**
-    * The mean squared error of the predicted probability and the actual result. Closer to 0 indicates higher accuracy.
+* The mean squared error of the predicted probability and the actual result. Closer to 0 indicates higher accuracy.
+
+
 * **Calibration Curve:**
-    * Visualizes "If the model predicts 30%, do 30% of those shots actually go in?" This confirms the reliability of the model.
+* Visualizes "If the model predicts 30%, do 30% of those shots actually go in?" This confirms the reliability of the model.
 
 ---
 
@@ -260,6 +281,7 @@ football-xg-portfolio/
 
 This project is released under the **MIT License**.  
 See the `LICENSE` file for details.
+
 
 
 
